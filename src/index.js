@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import {
   BrowserRouter, Routes, Route
 } from 'react-router-dom';
-import { AppProvider } from './src/context.';
+import { AppProvider } from './context.';
 import './index.css';
-import Home from './src/pages/Home/Home';
-import About from "./src/pages/About/About";
-import BookList from "./src/components/BookList/BookList";
-import BookDetails from "./src/components/BookDetails/BookDetails";
-import Signin from "./src/components/Modal/Signin";
-import User from "./src/components/User/User";
+import Home from './pages/Home/Home';
+import About from "./pages/About/About";
+import BookList from "./components/BookList/BookList";
+import BookDetails from "./components/BookDetails/BookDetails";
+import Signin from "./components/Modal/Signin";
+import User from "./components/User/User";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
