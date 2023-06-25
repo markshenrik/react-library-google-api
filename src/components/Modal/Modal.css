@@ -1,0 +1,93 @@
+
+
+h2{
+    padding: 10px;
+    text-align: center;
+}
+
+.modal-close{
+    position: absolute;
+    right: 25px;
+    bottom: 205px;
+    display: block;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.login-content {
+  border: 3px groove var(--red-color);
+  max-width: 500px;
+  width: 100%;
+  background-color: var(--grey-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 9999;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input{
+    margin: 0.2em 0.5em;
+    padding: 0.3em;
+    border: 2px solid var(--red-color);
+    border-radius: 7px;
+}
+
+.form input::placeholder{
+  color: var(--black-color);
+}
+
+.form button{
+    color: aliceblue;
+    background-color: var(--red-color);
+    margin: 1em auto;
+    padding: 0.3em;
+    border-radius: 7px;
+    width: 10em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--red-color);
+  height: 2px;
+  width: 80%;
+  margin: 10px auto;
+  /* background-color: blue; */
+}
+
+
+span{
+  display: inline-block;
+  padding: 7px;
+  text-align: center;
+}
+
+#btn-signup-modal{
+  display: inline-block;
+  padding: 4px;
+  border: 2px solid var(--red-color);
+  border-radius: 5px;
+  margin: auto;
+}
+
+.signup{
+  border: 3px groove var(--red-color);
+  max-width: 500px;
+  width: 100%;
+  background-color: var(--grey-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -0.8%);
+  z-index: 9999;
+  margin-left: auto;
+  margin-right: auto;
+}
