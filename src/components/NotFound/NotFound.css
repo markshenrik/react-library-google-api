@@ -1,0 +1,14 @@
+.not-auth{
+    border: 3px groove var(--red-color);
+    max-width: 500px;
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 9999;
+    background-color: var(--alt-black-color);
+    color: var(--white-color);
+    text-align: center;    
+    margin: 0 20px;
+}

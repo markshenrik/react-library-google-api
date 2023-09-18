@@ -4,8 +4,10 @@
   --red-color: #ae2734;
   --pink-color: #d9176d;
   --grey-color: #f3f3f3;
+  --green-color: #28b510;
   --white-color: #fff;
-  --black-color: #010101;;
+  --black-color: #010101;
+  --alt-black-color: #181515ae;
   --light-black-color: #717171;
   --transition: all 300ms ease-in-out;
 }
@@ -17,7 +19,10 @@
 }
 html{
   font-size: 10px;
+  scroll-behavior: smooth;
 }
+
+
 body{
   font-size: 1.6rem;
   line-height: 1.7;
@@ -57,8 +62,10 @@ input{
 
 /* backgrounds */
 .bg-pink{background-color: var(--pink-color);}
-.bg-purple{background-color: var(--red-color);}
+.bg-red{background-color: var(--red-color);}
 .bg-white{background-color: var(--white-color);}
+.bg-green{background-color: var(--green-color);}
+.bg-alt-black{background-color: var(--alt-black-color);}
 
 /* text */
 .text-black{color: var(--black-color);}
@@ -94,15 +101,45 @@ input{
 .ls-1{letter-spacing: 1px;}
 .ls-2{letter-spacing: 2px;}
 
+/* margin */
+.mg-1{margin: 10px}
+.mg-2{margin: 20px}
+.mg-3{margin: 30px}
+.mg-4{margin: 40px}
+.mg-5{margin: 50px}
+.mg-6{margin: 60px}
+.mg-7{margin: 70px}
+.mg-8{margin: 80px}
+.mg-9{margin: 90px}
+.mg-10{margin: 100px}
+
+/* padding */
+.pad-1{padding: 10px}
+.pad-2{padding: 20px}
+.pad-3{padding: 30px}
+.pad-4{padding: 40px}
+.pad-5{padding: 50px}
+.pad-6{padding: 60px}
+.pad-7{padding: 70px}
+.pad-8{padding: 80px}
+.pad-9{padding: 90px}
+.pad-10{padding: 100px}
+
 .flex{
   display: flex;
   align-items: center;
+}
+.flex-end{
+  justify-self: end;
 }
 .flex-column{
   flex-direction: column;
 }
 .flex-sb{
   justify-content: space-between;
+}
+.flex-se{
+  justify-content: space-evenly;
 }
 .flex-c{
   justify-content: center;

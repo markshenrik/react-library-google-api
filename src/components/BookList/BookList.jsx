@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { useGlobalContext } from "../../context.";
+import { useGlobalContext } from "../../context";
 import Book from "../BookList/Book";
 import Loading from "../Loader/Loader";
 import "./BookList.css";
@@ -15,6 +15,7 @@ const BookList = () => {
     }
     return null;
   }, [loading]);
+
 
   return (
     <section className="booklist">

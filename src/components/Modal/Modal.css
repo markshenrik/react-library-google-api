@@ -1,15 +1,27 @@
-
+.header-login h2{
+    flex-grow: 1;
+    padding-left: 40px;
+}
 
 h2{
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.modal-container{
+  margin: 20px;
+}
+
+.header-login{
+display: flex;
+
+align-items: center;
 }
 
 .modal-close{
-    position: absolute;
-    right: 25px;
-    bottom: 205px;
-    display: block;
+ 
+    margin-right: 20px;
     text-align: center;
     user-select: none;
     cursor: pointer;
@@ -18,15 +30,14 @@ h2{
 .login-content {
   border: 3px groove var(--red-color);
   max-width: 500px;
-  width: 100%;
-  background-color: var(--grey-color);
+  width: 90%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 75%;
+  left: 47%;
   transform: translate(-50%, -100%);
   z-index: 9999;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.8em;
+  background-color: var(--alt-black-color);
 }
 
 .form {
@@ -59,35 +70,53 @@ hr {
   border-top: 1px solid var(--red-color);
   height: 2px;
   width: 80%;
-  margin: 10px auto;
-  /* background-color: blue; */
+  margin: auto;
 }
 
 
 span{
   display: inline-block;
-  padding: 7px;
   text-align: center;
 }
 
 #btn-signup-modal{
   display: inline-block;
-  padding: 4px;
   border: 2px solid var(--red-color);
   border-radius: 5px;
-  margin: auto;
+  margin-left: 5rem;
 }
 
-.signup{
-  border: 3px groove var(--red-color);
-  max-width: 500px;
-  width: 100%;
-  background-color: var(--grey-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -0.8%);
-  z-index: 9999;
-  margin-left: auto;
-  margin-right: auto;
+
+
+.signup-div{
+  margin: auto;
+  padding-left: 35px;
 }
+
+@media(max-width: 450px){
+  .login-content{
+    top: 85%
+  }
+}
+
+#eye-icon{
+  position: absolute;
+    top: 70.5%;
+    left: 92%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    &:hover {
+      color: var(--black-color);
+      
+    }
+}
+
+@media(max-width: 520px){
+  #eye-icon{left: 90%;}
+}
+
+@media(max-width: 420px){
+  #eye-icon{left: 88%;}
+}
+

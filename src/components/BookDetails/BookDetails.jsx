@@ -5,6 +5,7 @@ import coverImg from "../../images/cover_not_found.jpg";
 import "./BookDetails.css";
 import { FaArrowLeft } from "react-icons/fa";
 
+
 const URL = "https://www.googleapis.com/books/v1/volumes/";
 
 const BookDetails = () => {
@@ -12,6 +13,11 @@ const BookDetails = () => {
   const [loading, setLoading] = useState(false);
   const [book, setBook] = useState(null);
   const navigate = useNavigate();
+ 
+
+  const handleGoBack = () => {
+    navigate(-1)
+  };
 
   function removeTagsHTML(textoComTags) {
     return textoComTags.replace(/(<([^>]+)>)/gi, "");
@@ -77,7 +83,7 @@ const BookDetails = () => {
           <button
             type="button"
             className="flex flex-c back-btn"
-            onClick={() => navigate("/")}
+            onClick={handleGoBack}
           >
             <FaArrowLeft size={22} />
             <span className="fs-18 fw-6">Go Back</span>

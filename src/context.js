@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
 import { useCallback } from "react";
-
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -8,8 +7,9 @@ const AppProvider = ({ children }) => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [resultTitle, setResultTitle] = useState("");
+  const [token, setToken] = useState(null);
+  const [loginUser, setLoginUser] = useState(null);
   const apiKey = process.env.REACT_APP_API_KEY;
-
 
   const fetchBooks = useCallback(async () => {
     setLoading(true);
@@ -19,11 +19,20 @@ const AppProvider = ({ children }) => {
       );
       const data = await response.json();
       const { items } = data;
-     
+      const storageToken = localStorage.getItem("token");
+      const storageUser = localStorage.getItem("login");
+
+      if (storageToken) {
+        setToken(storageToken);
+      }
+      if (storageUser) {
+        setLoginUser(storageUser);
+      }
+      
       if (items) {
         const newBooks = items.map((bookSingle) => {
           const { id, volumeInfo, accessInfo, saleInfo } = bookSingle;
-          
+
           return {
             id: id,
             pages: volumeInfo.pageCount,
@@ -50,7 +59,6 @@ const AppProvider = ({ children }) => {
       }
       setLoading(false);
     } catch (error) {
-      console.log(error);
       setLoading(false);
     }
   }, [searchTerm, apiKey, resultTitle]);
@@ -67,6 +75,10 @@ const AppProvider = ({ children }) => {
         setSearchTerm,
         resultTitle,
         setResultTitle,
+        token,
+        setToken,
+        loginUser,
+        setLoginUser,
       }}
     >
       {children}

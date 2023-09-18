@@ -1,6 +1,4 @@
 {
-  "homepage": ".",
-  "proxy": "http://127.0.0.1:3000",
   "name": "my_app",
   "version": "0.1.0",
   "private": true,
