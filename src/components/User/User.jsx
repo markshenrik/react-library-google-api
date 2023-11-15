@@ -16,6 +16,7 @@ import NotFound from "../NotFound/NotFound";
 import "../BookList/BookList.css";
 
 const User = () => {
+  const baseURL = 'https://api-login-library-system.vercel.app';
   const [user, setUser] = useState({
     login: "",
     name: "",
@@ -38,7 +39,7 @@ const User = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/user/${params.id}`,
+          `${baseURL}/user/${params.id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -69,7 +70,7 @@ const User = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/books`, {
+        const response = await axios.get(`${baseURL}/books`, {
           params: {
             LoginUser: `${params.id}`,
           },
@@ -148,7 +149,7 @@ const User = () => {
     };
 
     try {
-      const response = await axios.put(`http://localhost:3001/readBooks`, {
+      const response = await axios.put(`${baseURL}/readBooks`, {
         book,
       });
     } catch (error) {
@@ -162,7 +163,7 @@ const User = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:3001/removeBookcase`,
+        `${baseURL}/removeBookcase`,
         {
           data: {
             bookId,
@@ -188,7 +189,7 @@ const User = () => {
     };
 
     try {
-      await axios.put(`http://localhost:3001/favoriteBooks`, {
+      await axios.put(`${baseURL}/favoriteBooks`, {
         book,
       });
       setUserBks((prevUserBooks) =>
@@ -201,7 +202,7 @@ const User = () => {
 
   async function toReadBooks(bookItem) {
     try {
-      await axios.put(`http://localhost:3001/toReadBooks`, {
+      await axios.put(`${baseURL}/toReadBooks`, {
         bookItem,
       });
       setUserBks((prevUserBooks) =>
@@ -220,7 +221,7 @@ const User = () => {
     };
 
     try {
-      await axios.put(`http://localhost:3001/removeFavorite`, {
+      await axios.put(`${baseURL}/removeFavorite`, {
         book,
       });
       setUserBks((prevUserBooks) =>
