@@ -57,7 +57,7 @@ const Signin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/register",
+        "https://libertylibrary-ghhh.onrender.com/register",
         formData
       );
       console.log(response.data);
@@ -115,7 +115,7 @@ const Signin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/sign",
+        "https://libertylibrary-ghhh.onrender.com/sign",
         loginData
       );
       const { user, token } = response.data;
