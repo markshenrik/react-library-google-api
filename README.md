@@ -2,6 +2,9 @@
 
 ## LibertyLibrary 📚
 
+[![Em Desenvolvimento](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow.svg)](https://react-libraty-google-api.vercel.app/)
+
+
 <div style="text-align: center;">
     <p style="text-align: center; font-size: 18px;  max-width: 80%; margin: 50px auto;">
         Este projeto pessoal foi meticulosamente concebido com o
@@ -30,8 +33,6 @@
     </p>
 </div>
 
-<br />
-<br />
 
 ## Preview 🗺️
 
