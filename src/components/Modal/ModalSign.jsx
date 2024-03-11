@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import ConfirmRegister from "../ConfirmRegister/ConfirmRegister";
@@ -57,7 +57,7 @@ const Signin = () => {
 
     try {
       const response = await axios.post(
-        "https://libertylibrary-ghhh.onrender.com/register",
+        "http://localhost:3001/register",
         formData
       );
       console.log(response.data);
@@ -115,7 +115,7 @@ const Signin = () => {
 
     try {
       const response = await axios.post(
-        "https://libertylibrary-ghhh.onrender.com/sign",
+        "http://localhost:3001/sign",
         loginData
       );
       const { user, token } = response.data;
@@ -150,6 +150,10 @@ const Signin = () => {
     setShowPassword(!showPassword);
   };
   
+  useEffect(() => {
+    alert('As funções de Login ainda não estão disponíveis para usuários nesta versão do site!');
+  }, []);
+
   return (
     <div className="container">
       {!confirmRegister.register ? (
