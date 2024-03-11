@@ -1,6 +1,6 @@
-<h1 style="text-align: center">FullStack Library Project 🚀</h1>
+# FullStack Library Project 🚀
 
-<h2 style="text-align: center">LibertyLibrary 📚</h2>
+## LibertyLibrary 📚
 
 <div style="text-align: center;">
     <p style="text-align: center; font-size: 18px;  max-width: 80%; margin: 50px auto;">
@@ -33,12 +33,9 @@
 <br />
 <br />
 
-<h2 style="text-align: center">Preview 🗺️</h2>
+## Preview 🗺️
 
-<br />
-<br />
-
-<h3 style="text-align: center">Home 🏠</h3>
+### Home 🏠
 
 <img src="./src/images/Home.png"/>
 
@@ -59,7 +56,7 @@
 <br />
 <br />
 
-<h3 style="text-align: center">Usuário 🧑‍💻</h3>
+### Usuário 🧑‍💻
 
 <div style="text-align: center;">
   <p style="text-align: center; font-size: 18px;  max-width: 80%; margin: 50px auto;">Para melhorar a experiência do usuário, foi desenvolvido um sistema de login de usuários que funciona como uma estante virtual onde os mesmos podem criar as suas próprias listas de livros que desejam ler, já lidos e favoritos.</p>
@@ -82,17 +79,17 @@
 <br />
 <br />
 
-<h3 style="text-align: center">Mobile 📱</h3>
+### Mobile 📱
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; ">
-    <img style="display: inline-block; width: 35em; margin: 1em; " src="./src/images/Mobile1.gif"/>
-<img style="display: inline-block; width: 35em; margin: 1em" src="./src/images/Mobile2.gif"/>
+    <img style="display: inline-block; width: 25em; margin: 1em; " src="./src/images/Mobile1.gif"/>
+<img style="display: inline-block; width: 25em; margin: 1em" src="./src/images/Mobile2.gif"/>
 </div>
 
 <br />
 <br />
 
-<h3 style="text-align: center">Tecnologias 🛠️</h3>
+### Tecnologias 🛠️
 
 <p  style="text-align: justify; font-size: 18px">Segue algumas das principais tecnologias utilizadas para o desenvolvimento deste projeto:</p>
 
@@ -102,9 +99,10 @@
 - Sequelize
 - Google Books API
 
-<h3 style="text-align: center">Contato 📳</h3>
+### Contato 📳
 
 - [Portfólio](https://portfolio-markshenrik.vercel.app/)
 - [LinkedIn](https://www.linkedin.com/in/markshenrik/)
 - [WhatsApp](https://api.whatsapp.com/send?phone=5579998511403)
 - [Email](mailto:markshenrik13@gmail.com)
+- [LibertyLibrary](https://react-libraty-google-api.vercel.app/)
