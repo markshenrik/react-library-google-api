@@ -1,4 +1,4 @@
-# FullStack Library Project 🚀
+# Projeto de Livraria FullStack 🚀
 
 ## LibertyLibrary 📚
 
