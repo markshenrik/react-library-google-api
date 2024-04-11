@@ -17,11 +17,11 @@ const About = () => {
           <div className="about-text">
             <h2 className="about-title fs-26 ls-1">Sobre o LibertyLibrary</h2>
             <p className="fs-17 text-center">
-              Este projeto pessoal foi meticulosamente concebido com o
-              intuito exclusivo de ampliar e aprimorar as minhas competências no
-              âmbito do desenvolvimento web. Trata-se de um projeto que consiste
-              numa livraria e biblioteca virtual, proporcionando aos seus
-              usuários uma experiência imersiva e enriquecedora.
+              Este projeto pessoal foi meticulosamente concebido com o intuito
+              exclusivo de ampliar e aprimorar as minhas competências no âmbito
+              do desenvolvimento web. Trata-se de um projeto que consiste numa
+              livraria e biblioteca virtual, proporcionando aos seus usuários
+              uma experiência imersiva e enriquecedora.
             </p>
             <p className="fs-17 text-center">
               Por meio desta plataforma, os usuários têm a oportunidade não
@@ -37,10 +37,10 @@ const About = () => {
               utilização criteriosa e estratégica da <b>Google Books API</b> e
               de algumas das mais renomadas ferramentas e tecnologias
               disponíveis no panorama do desenvolvimento web, incluindo
-              <b>React</b> para a interface do usuário, <b>Node</b> com
-              <b>Express</b>
+               <b>React</b> para a interface do usuário, <b>Node</b> com
+               <b>Express</b> 
               para o desenvolvimento da API no backend e <b>MySQL</b> com
-              <b>Sequelize</b> para o gerenciamento do banco de dados.
+               <b>Sequelize</b> para o gerenciamento do banco de dados.
             </p>
           </div>
         </div>
